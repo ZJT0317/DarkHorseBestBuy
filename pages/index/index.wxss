@@ -1,0 +1,40 @@
+/**index.wxss**/
+.swiper-index{
+	height:calc(100vw*340/750);
+}
+.swiper-image-index{
+	width:100%;
+}
+.navi{
+	display:flex;
+}
+.navi-item{
+	flex:1;
+	padding:20rpx;
+}
+.navi-item image{
+	width:100%;
+}
+.imag{
+   padding:10rpx;
+}
+
+.twoImage{
+	float:left;
+	width:calc(100vw/3);
+	overflow:hidden;
+}
+.twoImage image{
+	width:100%;
+}
+.twoImage:nth-child(1) image{
+	height:calc(386/232*33.33vw + 10rpx);
+	border-left:10rpx solid #fff;
+}
+.twoImage:nth-last-child(-n+4) image{
+	height:calc(193/232*33.33vw);
+	border-left:10rpx solid #fff;
+}
+
+
+

@@ -1,0 +1,31 @@
+<!--pages/pay/index.wxml-->
+<view class="add">
+   <view class="oneAdd">
+      <view>收货人:{{addre.userName}}</view>
+      <view>{{addre.provinceName+addre.cityName+addre.countyName+addre.detailInfo}}</view>
+   </view>
+  <view class="twoAdd">{{addre.telNumber}}</view>
+</view>
+<view class="gouwuche">购物车</view>
+<view wx:for="{{goods_list}}" class="goodsList">
+     <view class="middleBox">
+			   <image src="{{item.goods_small_logo?item.goods_small_logo:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1580640602224&di=fe8bd203fe37c2d7efa70aa6ba03211f&imgtype=0&src=http%3A%2F%2F3933608.s21i-3.faiusr.com%2F4%2FABUIABAEGAAgp_uq1AUo3p7C-gIwvww45gc.png'}}" mode="widthFix"></image>
+	    </view>
+		<view class="rightBox">
+		  <view class="goods_name">{{item.goods_name}}</view>
+		  <view class="goods_price">¥ {{item.goods_price}}</view>
+		  <view class="goods_num">
+			 <text class="num">× {{item.num}}</text>
+		  </view>
+	 </view>
+</view>
+<view class="Wrap"></view>
+<view class="all">
+	<view class="middleAll">
+		<view>合计: <text class="allPrice">¥ {{price}}</text></view>
+		<view>包含运费</view>
+	</view>
+	<view class="rightAll" bindtap="handlePay">
+		支付(<text>{{Allnum}}</text>)
+	</view>
+</view>

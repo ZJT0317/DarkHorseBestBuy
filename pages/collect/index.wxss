@@ -1,0 +1,57 @@
+/* pages/collect/index.wxss */
+page{
+  font-size:34rpx;
+  background-color:#f3f4f6;
+}
+.storeStatus{
+  /* overflow:hidden; */
+  height:90rpx;
+  margin:30rpx 0 0 0;
+}
+text{
+	padding:15rpx 10rpx;
+	font-size:36rpx;
+	text-align:center;
+	border:3rpx solid #e8ebed;
+  margin-left:20rpx;
+	background-color:#fff;
+	border-radius:5rpx;
+}
+.active{
+	color:#f40;
+	border:3rpx solid #f40;
+	background-color:#fff;
+}
+.lan navigator{
+	display:flex;
+	height:250rpx;
+	border-bottom:6rpx solid #e8ebed;
+  padding:10rpx 20rpx;
+  background-color: #fff;
+}
+.left{
+	flex:1;
+	width:33.3vw;
+  display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.Right{
+	flex:2;
+	width:66.7vw;
+}
+.goods_image{
+  width:90%;
+}
+.goods_Info{
+	font-size: 30rpx;
+	width:100%;
+	margin:40rpx 20rpx;
+	height:100rpx;
+	line-height:50rpx;
+	overflow:hidden;
+}
+.goods_price{
+	margin:20rpx;
+	color:#ff2d4a;
+}

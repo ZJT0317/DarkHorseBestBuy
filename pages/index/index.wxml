@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<!-- 搜索框 -->
+<searchInput></searchInput> 
+<!-- 轮播图 -->
+<view class="wrapper">
+  <swiper class="swiper-index" autoplay circular interval="1500" indicator-dots indicator-active-color="#fff">
+      <swiper-item wx:for="{{obj}}" wx:key="goods_id" >
+           <navigator url="{{item.navigator_url}}">
+              <image src="{{obj[index].image_src}}" class="swiper-image-index" mode="widthFix"></image>
+            </navigator>
+      </swiper-item>
+  </swiper>
+</view>
+<!-- 导航栏 -->
+<view class="wrapper2">
+    <view class="navi">
+        <navigator wx:for="{{naviObj}}" wx:key="name" class="navi-item" url="../fenlei/fenlei"
+         open-type="switchTab">
+            <image src="{{naviObj[index].image_src}}" mode="widthFix"></image>
+            <text class="word">{{naviObj.name}}</text>
+        </navigator>
+   </view>
+    <view class="oneImage" wx:for="{{floor}}" wx:for-index="index" wx:for-item="item" wx:key="floor[index].floor_title.name">
+             <image class="imag" src="{{floor[index].floor_title.image_src}}" mode="widthFix"></image>
+            <view class="wrapper-item">
+			<view class="twoImage" wx:for="{{floor[index].product_list}}"  wx:for-index="index1" wx:for-item="item1" wx:key="floor[index].product_list[index1].name">
+             <navigator url="{{floor[index].product_list[index1].navigator_url}}"> 
+               <image src="{{floor[index].product_list[index1].image_src}}" ></image>
+             </navigator>
+           </view>
+		   </view>
+    </view>
+</view>

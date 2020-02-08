@@ -1,0 +1,26 @@
+<!--pages/feedback/index.wxml-->
+<tab list="{{List}}"  bindtapfunction="TapShow">
+   <block wx:if="{{List[0].isActive}}">
+        <view>问题的种类</view>
+        <view class="feedbackWrapper">
+            <view>功能建议</view>
+            <view>购买遇到的问题</view>
+            <view>性能问题</view>
+            <view>其他</view>
+        </view>
+        <view class="textWrapper">
+            <textarea class="Text" placeholder="请输入您的问题" value="{{value}}" bindinput="Input"></textarea>
+            <view class="addWraper">
+				<view class="add"  bindtap="addTap">+</view>
+                <view wx:for="{{src}}">
+                   <chooseImage src="{{item}}" index="{{index}}"  bindCancel="deleteImage"></chooseImage>
+                </view>
+			</view>
+        </view>
+        <view class="submit" bindtap="submitBtn">
+           <icon size="30" type="success_no_circle" color="#fff"></icon>
+           <text>提交</text>
+        </view>
+   </block>
+    <block wx:if="{{List[1].isActive}}">内容2</block>
+</tab>

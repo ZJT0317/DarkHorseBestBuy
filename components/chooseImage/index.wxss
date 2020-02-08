@@ -1,0 +1,19 @@
+/* components/chooseImage/index.wxss */
+.imageWrapper{
+  height:90rpx;
+  width:90rpx;
+  position:relative;
+  margin-left:20rpx;
+  margin-bottom:10rpx;
+  float:left;
+}
+.ima{
+  width:90rpx;
+  height:90rpx;
+  border-radius:15rpx;
+}
+.Icon{
+  position:absolute;
+  top:-20rpx;
+  left:65rpx;
+}

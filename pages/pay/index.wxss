@@ -1,0 +1,113 @@
+/* pages/pay/index.wxss */
+.But{
+  margin:20rpx 0;
+  font-size:38rpx;
+}
+.add{
+  display:flex;
+  padding:20rpx;
+  font-size:32rpx;
+}
+.oneAdd{
+  flex:7;
+}
+.twoAdd{
+  flex:3;
+}
+.gouwuche{
+  color:#f40;
+  padding:0 20rpx;
+  height:80rpx;
+  font-size: 40rpx;
+  line-height:80rpx;
+  border-top:7rpx solid #f40;
+  border-bottom:7rpx solid #f40;
+}
+.goodsList{
+ display:flex;
+ height:260rpx;
+ border-bottom:6rpx solid #dedede;
+}
+.middleBox{
+ flex:1;
+ height:100%;
+ display:flex;
+ align-items: center;
+ justify-content: center;
+ padding:10rpx 20rpx;
+}
+.rightBox{
+ flex:2;
+ height:100%;
+ font-size:30rpx;
+ margin-top:35rpx;
+ margin-left:15rpx;
+ position:relative;
+}
+.middleBox image{
+ width:100%;
+}
+.goods_price{
+ color:#f40;
+ font-size:38rpx;
+ position:absolute;
+ bottom:55rpx;
+ left:0;
+}
+.goods_num{
+ font-size:38rpx;
+ position:absolute;
+ bottom:55rpx;
+ right:20rpx;
+}
+.num{
+ margin:0 10rpx;
+}
+.numAdd,
+.numjian{
+ display:inline-block;
+ border:4rpx solid #dedede;
+ border-radius:8rpx;
+ height:40rpx;
+ width:40rpx;
+ line-height:40rpx;
+ text-align:center;
+}
+.all{
+ position:fixed;
+ bottom:0;
+ left:0;
+ width:100%;
+ height:90rpx;
+ display:flex;
+ border-top:6rpx solid #dedede;
+ background-color:#edece8;
+}
+.middleAll{
+ flex:4.8;
+ text-align:right;
+ font-size: 34rpx;
+ line-height:45rpx;
+}
+.rightAll{
+ flex:2;
+ font-size: 36rpx;
+ background-color:#ff2d4a;
+ text-align:center;
+ line-height:90rpx;
+ color:#fff;
+}
+.imageWrapper{
+ width:100%;
+ text-align:center;
+}
+.imageWrapper image{
+ width:60%;
+}
+.allPrice{
+  color:#ff2d4a;
+  font-weight: 900;
+}
+.Wrap{
+	height:110rpx;
+}

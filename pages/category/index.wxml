@@ -1,0 +1,19 @@
+<!--pages/category/index.wxml-->
+<searchInput></searchInput>
+<tab list="{{List}}" bindtapfunction="TapShow">
+     <block wx:if="{{List[0].isActive}}">
+          <view wx:for="{{obj}}" wx:for-index="index" wx:for-item="item" class="lan">
+           <navigator url="/pages/goods_detail/main?goods_id={{item.goods_id}}">
+          <view class="left">
+                  <image mode="widthFix" src="{{item.goods_big_logo?item.goods_big_logo:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1580640602224&di=fe8bd203fe37c2d7efa70aa6ba03211f&imgtype=0&src=http%3A%2F%2F3933608.s21i-3.faiusr.com%2F4%2FABUIABAEGAAgp_uq1AUo3p7C-gIwvww45gc.png'}}" class="goods_image"></image>
+          </view>
+          <view class="Right">
+              <view class="goods_Info">{{item.goods_name}}</view>
+              <view class="goods_price">¥{{item.goods_price}}</view>
+          </view>
+          </navigator>
+        </view>
+     </block>
+     <block wx:if="{{List[1].isActive}}">内容2</block>
+     <block wx:if="{{List[2].isActive}}">内容3</block>
+</tab>

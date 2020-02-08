@@ -1,0 +1,6 @@
+<!--components/chooseImage/index.wxml-->
+<view class="imageWrapper">
+<image src="{{src}}" class="ima">
+</image>
+  <icon type="clear" size="20" class="Icon" color="#f40" bindtap="cancelImage" data-index="{{index}}"></icon>
+ </view>

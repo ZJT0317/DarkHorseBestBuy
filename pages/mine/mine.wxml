@@ -1,0 +1,72 @@
+<!--pages/mine/mine.wxml-->
+<block wx:if="{{userInfo.nickName}}">
+   <view class="BasedImage">
+      <image class="user_Big_Image" src="{{userInfo.avatarUrl}}"></image>
+      <image class="user_Small_Image" src="{{userInfo.avatarUrl}}"></image>
+      <view class="user_name">{{userInfo.nickName}}</view>
+   </view>
+ </block>
+ <block wx:else>
+	 <view class="twoBasedImage">
+	   <navigator url="../login/index">
+		 <view class="load">登录</view>
+       </navigator>
+     </view>
+ </block>
+ <view class="user_wrapper">
+	 <view class="user_main">
+		 <!-- 历史足迹 -->
+		 <view class="my_history">
+		<view class="collect">
+			<view class="user_num">0</view>
+			<view>收藏的店铺</view>
+		</view>
+		<view class="collect">
+			<view class="user_num">0</view>
+			<view>收藏的商品</view>
+		</view>
+		<navigator class="collect" url="../collect/index">
+			<view class="user_num">{{storeNum}}</view>
+			<view>关注的商品</view>
+		</navigator>
+		<view class="collect">
+			<view class="user_num">0</view>
+			<view>我的足迹</view>
+		</view>
+		</view>
+		<!-- 我的订单 -->
+		<view class="my_list">
+			<view class="my_list_one">我的订单</view>
+			<view class="my_list_two">
+				<view class="list">
+					<image src="../../icons/订单.png" mode="widthFix"></image>
+					<view>全部订单</view>
+				</view>
+				<view class="list">
+					<image src="../../icons/待付款 (1).png" mode="widthFix"></image>
+					<view>待付款</view>
+				</view>
+				<view class="list">
+					<image src="../../icons/待收货 (6).png" mode="widthFix"></image>
+					<view>待收货</view>
+				</view>
+				<view class="list">
+					<image src="../../icons/退款.png" mode="widthFix"></image>
+					<view>退款/退货</view>
+				</view>
+			</view>
+  	</view>
+    <!-- 收货地址管理 -->
+    <view class="managerAddress">收货地址管理</view>
+	<!-- 联系客服 -->
+	<view class="contact">
+		<view class="contact_one">
+			<text>联系客服</text>
+			<text class="tel">400-618-4000</text>
+		</view>
+		<navigator class="contact_two" url="../feedback/index">意见反馈</navigator>
+		<view class="contact_three">关于我们</view>
+	</view>
+	<view class="user_recommand">把应用推荐给其他人</view>
+	 </view>
+ </view>

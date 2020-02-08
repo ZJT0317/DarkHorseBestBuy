@@ -1,0 +1,9 @@
+<!--components/tab/tab.wxml-->
+<view class="wrapper">
+  <view wx:for="{{list}}" 
+    bindtap="TapFunction"
+    data-index="{{index}}"
+    class="contain {{item.isActive===true?'active':''}}"
+  >{{item.name}}</view>
+</view>  
+<slot></slot>

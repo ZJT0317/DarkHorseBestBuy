@@ -1,0 +1,2 @@
+<!--pages/login/index.wxml-->
+<button type="primary" plain class="btn" bindgetuserinfo="getUserInfo" open-type="getUserInfo">登录</button>

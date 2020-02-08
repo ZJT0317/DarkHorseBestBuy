@@ -1,0 +1,26 @@
+<!--pages/fenlei/fenlei.wxml-->
+<searchInput></searchInput>
+<view class="wrapper">
+   <scroll-view scroll-y="true" class="oneScroll">
+      <view wx:for="{{obj}}" class="oneScrollView {{index===currentIndex?'active':''}}" bindtap="tapFunction" data-index="{{index}}">
+        {{item}}
+      </view>
+   </scroll-view>
+   <scroll-view scroll-y="true" class="twoScroll" scroll-top="{{ScrollTop}}">
+       <view class="scrollItem" wx:for="{{RightMenu}}" wx:for-index="index" wx:for-item="item" wx:key="cat_id">
+          <view class="title">
+			  <text decode="true">/&nbsp;&nbsp;</text>
+			  <text>{{item.cat_name}}</text>
+			  <text decode="true">&nbsp;&nbsp;/</text>
+		    </view>
+		   <view class="good_list">
+           <navigator wx:for="{{RightMenu[index].children}}" wx:for-index="index1" wx:for-item="item1"
+           url="/pages/category/index?goods_id={{item1.cat_id}}"
+           >
+                  <image class="im" mode="widthFix" src="{{RightMenu[index].children[index1].cat_icon}}"></image>
+                  <view class="item-name">{{item1.cat_name}}</view>
+           </navigator>
+		   </view>
+       </view>
+   </scroll-view>
+</view>

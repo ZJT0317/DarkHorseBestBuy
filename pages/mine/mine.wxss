@@ -1,0 +1,117 @@
+/* pages/mine/mine.wxss */
+page{
+  background-color:#edece9;
+}
+.BasedImage{
+	position:relative;
+	height:450rpx;
+	width:100%;
+	overflow:hidden;
+}
+.twoBasedImage{
+	position:relative;
+	height:450rpx;
+   width:100%;
+   background-color:#ff2d4a;
+   overflow:hidden;
+}
+.user_Big_Image{
+	height:500rpx;
+	width:100%;
+	filter: blur(15rpx);
+}
+.user_Small_Image{
+	width:150rpx;
+	height:150rpx;
+	border-radius:50%;
+	position:absolute;
+	left:50%;
+	transform:translateX(-50%);
+	top:25%;
+}
+.user_name{
+	position:absolute;
+	top:72%;
+	left:0;
+	text-align:center;
+	color:#fff;
+	width:100%;
+}
+.load{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translateX(-50%) translateY(-50%);
+    padding:25rpx;
+	font-size:38rpx;
+    border:1rpx solid greenyellow;
+    color:greenyellow;
+	border-radius:10rpx;
+}
+.user_wrapper{
+	position:relative;
+	font-size:30rpx;
+	color:#666;
+ }
+.user_main{
+	position:absolute;
+	width:94%;
+	left:50%;
+	transform: translateX(-50%);
+    top:-60rpx;
+}
+.my_history{
+	display:flex;
+	height:80rpx;
+	margin-bottom:15rpx;
+	background-color:#fff;
+	padding:10rpx;
+}
+.collect{
+	flex:1;
+	text-align:center;
+}
+.user_num{
+	color:#ff2d4a;
+}
+.my_list{
+	background-color:#fff;
+}
+.my_list_one{
+	padding:20rpx;
+	border-bottom:3rpx solid #edece9;
+}
+.my_list_two{
+	display:flex;
+	padding:10rpx;
+}
+.list{
+	flex:1;
+	text-align:center;
+}
+.list image{
+	width:35%;
+}
+.managerAddress{
+	margin:15rpx 0;
+	background-color:#fff;
+	padding:20rpx;
+}
+.tel{
+	float:right;
+}
+.contact_one,
+.contact_two{
+	border-bottom:3rpx solid #edece9;
+}
+.contact{
+	margin-bottom:15rpx;
+}
+.contact_one,
+.contact_two,
+.contact_three,
+.user_recommand{
+	padding:20rpx;
+	background-color:#fff;
+}
+

@@ -1,0 +1,134 @@
+/* pages/goods_detail/index.wxss */
+.picWrapper{
+	height:480rpx;
+}
+.picItem view{
+	display:flex;
+	width:100%;
+	justify-content: center;
+	align-items: center;
+}
+.picImage{
+	width:75%;
+}
+.GoodsPrice{
+	font-weight: 800;
+	font-size:40rpx;
+	color:#ff2d4a;
+	margin:5rpx 20rpx;
+}
+.shortDes{
+	padding:5rpx 10rpx;
+}
+.shortLeft,
+.shortRight,
+.shortMiddle{
+	display:inline-block;
+	overflow:hidden;
+	border-bottom:10rpx solid #dedede;
+}
+.shortLeft{
+	width:80%;
+	font-size:34rpx;
+	height:110rpx;
+	line-height:55rpx;
+}
+.shortMiddle{
+	width:4%;
+	height:110rpx;
+}
+.shortMiddle view{
+	width:5rpx;
+	height:90rpx;
+	margin:10rpx 0;
+	text-align:center;
+	background-color:#dedede;
+}
+.shortRight{
+	width:16%;
+	text-align:center;
+	font-size: 34rpx;
+	height:110rpx;
+	line-height:55rpx;
+}
+.word{
+	color:#ff2d4a;
+	line-height:100rpx;
+	height:100rpx;
+	padding-left:20rpx;
+	font-size: 45rpx;
+	border-bottom:12rpx solid #dedede;
+}
+.bottomBar{
+	position:fixed;
+	bottom:0;
+	left:0;
+	width:100%;
+	height:110rpx;
+	background-color:#fff;
+	border-top:4rpx solid #dedede;
+}
+.one,
+.two,
+.three,
+.four,
+.five{
+	display:inline-block;
+	overflow:hidden;
+}
+
+.one,
+.two,
+.three{
+    width:16.6%;
+	height:80rpx;
+	border:5rpx solid blule;
+	font-size:26rpx;
+	padding:15rpx 0;
+	position:relative;
+}
+.one button,
+.two button,
+.three button{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	opacity:0;
+}
+.one image,
+.two image,
+.three image{
+	width:35%;
+}
+.BarImage{
+	text-align:center;
+}
+.one text,
+.two text,
+.three text{
+	display:block;
+	text-align:center;
+}
+.four,
+.five{
+	width:25%;
+	font-size: 32rpx;
+	color:#fff;
+	text-align:center;
+	height:110rpx;
+	line-height:110rpx;
+}
+.four{
+	background-color:orange;
+}
+.five{
+	background-color: #ff2d4a;
+}
+.checked{
+	background-color:#ff2d4a;
+}
+.checkedIcon{
+	width:45rpx;
+}

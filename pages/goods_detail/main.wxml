@@ -1,0 +1,39 @@
+<!--pages/goods_detail/index.wxml-->
+<swiper class="picWrapper" autoplay circular indicator-dots interval="1200">
+    <swiper-item wx:for="{{pic}}" class="picItem">
+       <view bindtap="PreImage" data-index="{{index}}">
+          <image src="{{item.pics_mid}}" mode="widthFix" class="picImage"></image>
+       </view>
+    </swiper-item>
+</swiper>
+<text class="GoodsPrice" decode="true">¥&nbsp;&nbsp;{{obj.goods_price}}</text>
+<view class="shortDes">
+	<view class="shortLeft">{{obj.goods_name}}</view>
+	<view class="shortMiddle">
+		<view></view>
+	</view>
+	<view class="shortRight">
+	   <image src="{{isChecked?'../../icons/星星.png':'../../icons/星星 (1).png'}}" bindtap="getIsChecked" class="checkedIcon" mode="widthFix"></image>
+		<view>收藏</view>
+	</view>
+</view>
+<view class="word">图文详情</view>
+<rich-text nodes="{{obj.goods_introduce}}"></rich-text>
+<view class="bottomBar">
+	<view class="one">
+		<view class="BarImage"><image src="../../icons/联系客服.png"  mode="widthFix"></image></view>
+		<text>联系客服</text>
+		<button open-type="contact"></button>
+	</view>
+	<view class="two">
+		<view class="BarImage"><image src="../../icons/分 享2.png" mode="widthFix"></image></view>
+		<text>分享</text>
+		<button open-type="share"></button>
+	</view>
+	<navigator class="three" url="../gouwu/gouwu" open-type="switchTab">
+		<view class="BarImage"><image src="../../icons/gouwuche (1).png"  mode="widthFix"></image></view>
+		<text>购物车</text>
+	</navigator>
+	<view class="four" bindtap="addGouwu">加入购物车</view>
+	<navigator class="five" url="../pay/index">立即购买</navigator>
+</view>

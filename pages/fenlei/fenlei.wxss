@@ -1,0 +1,49 @@
+/* pages/fenlei/fenlei.wxss */
+.wrapper{
+	display:flex;
+	height:calc(100vh - 90rpx);
+}
+.oneScroll{
+	flex:2;
+	width:100%;
+	background-color:#e8ebed;
+}
+.oneScrollView{
+	text-align:center;
+	height:100rpx;
+	line-height:100rpx;
+}
+.twoScroll{
+	flex:5;
+	width:100%;
+}
+.scrollItem{
+	width:100%;
+}
+.scrollItem navigator{
+	width:33.33%;
+  text-align:center;
+}
+.im{
+	width:60%;
+}
+.scrollItem{
+	overflow:hidden;
+}
+.title{
+	text-align:center;
+	height:40rpx;
+	line-height:40rpx;
+	color:gray;
+	margin:15rpx;
+}
+.good_list{
+	display:flex;
+	flex-wrap: wrap;
+}
+.item-name{
+	font-size:29rpx;
+}
+.active{
+	color:#ff2d4a;
+}
